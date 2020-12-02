@@ -16,7 +16,7 @@ while data_line:
 # print(integer_data)
 	
 for x in range(0, len(integer_data) -1):
-	for y in range(0, len(integer_data) -1):
+	for y in range(x + 1, len(integer_data) -1):
 		if (integer_data[x] + integer_data[y]) == 2020:
 			print(integer_data[x] * integer_data[y])
 
@@ -24,7 +24,7 @@ for x in range(0, len(integer_data) -1):
 # PART 2
 
 for x in range(0, len(integer_data) -1):
-	for y in range(0, len(integer_data) -1):
-		for z in range(0, len(integer_data) -1):
+	for y in range(x + 1, len(integer_data) -1):
+		for z in range(y + 1, len(integer_data) -1):
 			if (integer_data[x] + integer_data[y] + integer_data[z]) == 2020:
 				print(integer_data[x] * integer_data[y] * integer_data[z])
